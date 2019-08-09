@@ -25,11 +25,13 @@ public class UpdateBase implements UpdateBaseInfo {
     private String mVersion;
     private long mFileSize;
     private String mDonateUrl;
+    private String mSupportUrl;
     private String mForumUrl;
     private String mWebsiteUrl;
     private String mNewsUrl;
     private String mMaintainer;
     private String mMaintainerUrl;
+    private String mDeveloperUrl;
     private String mHash;
 
     UpdateBase() {
@@ -159,5 +161,23 @@ public class UpdateBase implements UpdateBaseInfo {
 
     public void setHash(String hash) {
         mHash = hash;
+    }
+
+    @Override
+    public String getSupportUrl() {
+        return mSupportUrl;
+    }
+
+    public void setSupportUrl(String supportUrl) {
+        mSupportUrl = supportUrl;
+    }
+
+    @Override
+    public String getDeveloperUrl() {
+        return mDeveloperUrl;
+    }
+
+    public void setDeveloperUrl(String developerUrl) {
+        mDeveloperUrl = developerUrl;
     }
 }
