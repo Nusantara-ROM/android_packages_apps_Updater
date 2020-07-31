@@ -35,6 +35,7 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import org.nad.ota.R;
 import org.nad.ota.UpdatesDbHelper;
 import org.nad.ota.controller.UpdaterService;
 import org.nad.ota.model.Update;
